@@ -13,10 +13,11 @@ Here is an example of an unsolved magic triangle, and its solution:
      (  )--[22]--(  )            ( 8)--[22]--(14)
 ``` 
 To determine the numbers in the circles, the program must solve the following system of 3 linear equations. Using Cramer's Rule and optimizing for the constraints of this problem, yields the following 3 equations:
-* TopCircle = (BottomSquare - RightSquare - LeftSquare)/-2 
-* LeftBottomCircle = (RigthSquare - LeftSquare - BottomSquare)/-2
-* RightBottomCircle = (LeftSquare - RightSquare - BottomSquare)/-2
-
+```C
+TopCircle = (BottomSquare - RightSquare - LeftSquare)/-2 
+LeftBottomCircle = (RigthSquare - LeftSquare - BottomSquare)/-2
+RightBottomCircle = (LeftSquare - RightSquare - BottomSquare)/-2
+```
 It is important to note, there may be 0 or more solutions for the combination of numbers selected for the squares. If solvable, the program only determines one solution. The input for the squares is limited between -40 to 40, inclusively.
 
 Uses Scanner class, so is not safe for multi-threaded use.
