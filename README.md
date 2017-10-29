@@ -22,4 +22,4 @@ It is important to note, there may be 0 or more solutions for the combination of
 
 Uses Scanner class, so is not safe for multi-threaded use.
  
-Submitted in partial fulfillment of the requirements of PCC CIS-219.
+Submitted in partial fulfillment of the requirements of PCC CIS-129.
